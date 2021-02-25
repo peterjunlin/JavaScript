@@ -12,11 +12,11 @@ let x = 5 + 6;
 
 // Function name:
 //   camelCase for function name.
+// Code block:
+//   - Put the opening bracket at the end of the first line.
 // Indentation: 
 //   - 2 spaces for indentation of code blocks.
 //   - No tabs.
-// Code block:
-//   - Put the opening bracket at the end of the first line.
 function toCelsius(fahrenheit) {
   return (5 / 9) * (fahrenheit - 32);
 }

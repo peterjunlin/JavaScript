@@ -1,12 +1,13 @@
 
-// you can't replace object parameter with another object.
+// Parameters are passed by value.
+// Object parameter is passed by address, so you can't replace object parameter with another object.
 function replaceObjectParameter(obj) {
-    obj = {name: 'Peter'};
+    obj = {name: 'Peter'};  // this has no effect on original object.
 }
 
-// Object parameter internal value can be changed, but you can't replace the object with another object.
+// Object parameter internal value can be changed.
 function editObjectParameter(obj) {
-    obj['fouth'] = 4;  // add a member variable.
+    obj['fouth'] = 4;  // add a member variable to original object.
 }
 
 let myobj = {first: 1, second: 2, third: 3};
