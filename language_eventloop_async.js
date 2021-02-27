@@ -1,4 +1,4 @@
-// Async function return promise.
+// Async function returns promise and created promise is in the eventloop.
 
 let hello = async () => {
     console.log("1st event - in async function.");

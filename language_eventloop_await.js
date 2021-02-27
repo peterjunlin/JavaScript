@@ -1,4 +1,4 @@
-// await will 
+// await for another promise to return.
 
 function resolveAfter2Seconds() {
     promise1 = new Promise(resolve => {
@@ -13,7 +13,7 @@ function resolveAfter2Seconds() {
   
 async function asyncCall() {
     console.log('1. calling');
-    const result = await resolveAfter2Seconds();
+    const result = await resolveAfter2Seconds();  // wait until the other promise to return.
     console.log('5. After await.');
     console.log(result);
     // expected output: "resolved"

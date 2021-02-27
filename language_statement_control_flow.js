@@ -29,25 +29,6 @@ switch (expr) {
     console.log(`Sorry, we are out of ${expr}.`);
 }
 
-// Loop - while / break
-let i = 0;
-while (i < 6) {
-    if (i == 3) {
-        break;
-    }
-    i += 1;
-}
-
-// Loop - for / break / continue
-for (let i = 0; i < 10; i++) {
-    if (i === 3) {
-      continue;
-    }
-    if (i === 6) {
-        break;
-    }
-  }
-
 // Exception - throw / try / catch
 try {
     throw 'Parameter is not a number!';
