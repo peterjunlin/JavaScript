@@ -1,4 +1,5 @@
 // Function are object in JavaScript.
+// Functions are hoisted to top.
 
 // Parameters are passed by value.
 // Object parameter is passed by address, so you can't replace object parameter with another object.

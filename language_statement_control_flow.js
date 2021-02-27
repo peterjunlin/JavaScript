@@ -55,3 +55,21 @@ try {
     console.error(e);
     // expected output: "Parameter is not a number!"
 }
+
+// Return - return nothing
+let f1 = function() {
+  return;
+}
+
+// Return - return value
+let f2 = function() {
+  let x = 8;
+  return x;
+}
+
+// Return - return function
+let f3 = (function() {
+  return () => { console.log("This is the function returned.") };
+})();
+
+f3();
