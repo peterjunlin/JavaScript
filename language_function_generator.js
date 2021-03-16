@@ -7,7 +7,7 @@ function* g() {
 }
 
 // Using generator.
-// Note: After exhausted, you have to create new one to use.
+// Note: generator can not be reused after it exhausted.
 var gen1 = g();
 while (!(tr = gen1.next()).done) {
   console.log(tr.value);

@@ -12,10 +12,19 @@ let dict = {
 }
 
 // Access value by key.
-console.log(dict['firstname']);  // use key as indexer
-console.log(dict.lastname);  // use dot property
+console.assert(dict['firstname'] == "Thomas");  // use key as indexer
+console.assert(dict.lastname == "Hank");  // use dot property
+
+// Add member
+dict["age"] = 30;
+dict["favorite color"] = "blue";  // add if not exists
+dict["favorite color"] = "green";  // change value if exists
+
+// Delete member
+delete dict['age'];
+delete dict['age'];  // no warning if 'age' does not exist
 
 // Iterating through key/value pairs.
 for (let k in dict) {
-    console.log(k, dict[k]);
+    console.log(k, "--", dict[k]);
 }

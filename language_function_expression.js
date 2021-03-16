@@ -1,6 +1,6 @@
 
-// Create lambda function.
+// Create function expression.
 let f1 = ()=>console.log("labmda");
 
-// Use lambda function.
+// Call function object.
 f1();
